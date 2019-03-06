@@ -1,8 +1,9 @@
 $(document).ready(function(){
-    $('.login').click(function(){
-        username = $("#username").val(); 
-        password = $("#password").val(); 
-        response = username + " " + password
+    $('.login').click(function(e){
+        e.preventDefault();
+
+        response = ["3958","61","28836261"]
+        console.log(response)
         Android.sendData(response)
     });
 
